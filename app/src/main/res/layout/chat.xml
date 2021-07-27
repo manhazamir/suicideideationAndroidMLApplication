@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    tools:context=".Chat">
+
+
+    <LinearLayout
+        android:weightSum="3"
+        android:background="#8253D6"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <Button
+            android:gravity="left"
+            android:layout_weight="1"
+            android:id="@+id/chatBack"
+            android:textSize="30sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="#8253D6" />
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Dr Bot"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8253D6"
+        android:orientation="horizontal">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <Button-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:id="@+id/backList"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&lt;"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:backgroundTint="#8253D6"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:src="@drawable/bubble_out">-->
+
+<!--        </ImageView>-->
+
+        <LinearLayout
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_doc"
+                android:background="@drawable/circle"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:background="@color/gray"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/chatListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:transcriptMode="alwaysScroll"
+                android:stackFromBottom="true"
+                android:divider="@null">
+
+            </ListView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:weightSum="6"
+                android:gravity="right"
+                android:visibility="visible"
+                android:id="@+id/micandTextID"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:id="@+id/listingText"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/recordButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mic"
+                                android:adjustViewBounds="true"
+                                android:maxHeight="80dp"
+                                android:maxWidth="60dp"
+                                android:scaleType="fitCenter"
+                                android:backgroundTint="@color/white"
+
+                                android:background="@drawable/circle"
+                                />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_weight="2"
+        android:id="@+id/scorelayout"
+        android:visibility="gone"
+        android:background="@color/gray"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+                app:backgroundTint="#8253D6"
+                android:textColor="@color/white"
+                android:id="@+id/scoreBtn"
+                android:text="Score"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="15sp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--           -->
+<!--            android:id="@+id/l1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_doc"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="60dp"-->
+<!--                    android:maxWidth="40dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    >-->
+
+<!--                </androidx.appcompat.widget.AppCompatImageView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/messageround"-->
+<!--                    android:text="ہیلو! میں ڈاکٹر بوٹ ہوں آپ کیسے ہو؟"-->
+<!--                   >-->
+
+<!--                </TextView>-->
+<!--            </LinearLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/messageround"-->
+<!--                    android:text="میں ٹھیک ہوں"-->
+<!--                    android:layout_gravity="right"-->
+
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginRight="40dp">-->
+
+<!--                </TextView>-->
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/user"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="60dp"-->
+<!--                    android:maxWidth="40dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_alignParentRight="true">-->
+
+
+
+<!--                </androidx.appcompat.widget.AppCompatImageView>-->
+<!--        </RelativeLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_doc"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:maxHeight="60dp"-->
+<!--                    android:maxWidth="40dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    >-->
+
+<!--                </androidx.appcompat.widget.AppCompatImageView>-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/voice"-->
+
+<!--                    android:adjustViewBounds="true"-->
+
+<!--                    android:scaleType="fitCenter"-->
+<!--                    >-->
+
+<!--                </androidx.appcompat.widget.AppCompatImageView>-->
+<!--            </LinearLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="60dp"-->
+<!--                android:text="View Result"-->
+<!--                android:textStyle="bold"-->
+<!--                app:backgroundTint="#8253D6"-->
+<!--                android:layout_marginLeft="135dp"-->
+<!--                android:layout_marginTop="250dp">-->
+
+<!--            </Button>-->
+
+<!--            <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/mic"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:maxHeight="80dp"-->
+<!--                android:maxWidth="60dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:layout_marginTop="-60dp"-->
+<!--                android:layout_marginLeft="340dp"-->
+<!--                >-->
+
+<!--            </androidx.appcompat.widget.AppCompatImageButton>-->
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

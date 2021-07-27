@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "989628226735",
+    "firebase_url": "https://suicideideation-278e2-default-rtdb.firebaseio.com",
+    "project_id": "suicideideation-278e2",
+    "storage_bucket": "suicideideation-278e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989628226735:android:ab949d61edf8bc54d7485a",
+        "android_client_info": {
+          "package_name": "com.example.suicideideation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989628226735-v6m5123fppqiqol02su8i30bg79sua24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_SDJKL8GH8y8AzKaDab-4JCMY2tG6MkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989628226735-v6m5123fppqiqol02su8i30bg79sua24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

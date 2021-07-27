@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:background="#8253D6"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <Button
+            android:gravity="left"
+            android:layout_weight="1"
+            android:id="@+id/history_score_back1"
+            android:textSize="30sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="#8253D6"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="History"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/testList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/l1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--            app:layout_constraintVertical_bias="0.0">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginLeft="100dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/rounded"-->
+<!--                android:orientation="vertical"-->
+
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="Depression Score"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18dp"></TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+
+<!--                    >-->
+
+<!--                    <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--                        android:id="@+id/a1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="40dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="40dp"-->
+<!--                        android:maxHeight="50dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/arr1"></androidx.constraintlayout.utils.widget.ImageFilterButton>-->
+
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="200dp"-->
+<!--                        android:maxHeight="200dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/depression">-->
+
+<!--                    </androidx.appcompat.widget.AppCompatImageView>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginLeft="100dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:background="@drawable/rounded"-->
+<!--                android:orientation="vertical"-->
+
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="Anxiety Score"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18dp"></TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--                        android:id="@+id/a2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="40dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="40dp"-->
+<!--                        android:maxHeight="50dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/arr1">-->
+
+<!--                    </androidx.constraintlayout.utils.widget.ImageFilterButton>-->
+
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="200dp"-->
+<!--                        android:maxHeight="200dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/anxiety">-->
+
+<!--                    </androidx.appcompat.widget.AppCompatImageView>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginLeft="100dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:background="@drawable/rounded"-->
+<!--                android:orientation="vertical"-->
+
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="Stress Score"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18dp"></TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="174dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--                        android:id="@+id/a3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="40dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="40dp"-->
+<!--                        android:maxHeight="50dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/arr1"-->
+
+<!--                        >-->
+
+<!--                    </androidx.constraintlayout.utils.widget.ImageFilterButton>-->
+
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="200dp"-->
+<!--                        android:maxHeight="200dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/stress">-->
+
+<!--                    </androidx.appcompat.widget.AppCompatImageView>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginLeft="100dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:background="@drawable/rounded"-->
+<!--                android:orientation="vertical"-->
+
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="Suicide Ideation Score"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18dp"></TextView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="168dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="40dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="40dp"-->
+<!--                        android:maxHeight="50dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/arr1"-->
+<!--                        android:id="@+id/a4"-->
+<!--                        >-->
+
+<!--                    </androidx.constraintlayout.utils.widget.ImageFilterButton>-->
+
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:adjustViewBounds="true"-->
+<!--                        android:maxWidth="200dp"-->
+<!--                        android:maxHeight="200dp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/suicide">-->
+
+<!--                    </androidx.appcompat.widget.AppCompatImageView>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+</LinearLayout>

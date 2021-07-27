@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.suicideideation">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SuicideIdeation"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HistoryScore"></activity>
+        <activity android:name=".ScoreCalcuator" />
+        <activity android:name=".register" />
+        <activity android:name=".ForgotPassword3" />
+        <activity android:name=".ForgotPassword2" />
+        <activity android:name=".ForgotPassword1" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.SuicideIdeation.NoActionBar">
+
+<!--             <intent-filter>-->
+<!--             <action android:name="android.intent.action.MAIN" />-->
+
+
+<!--             <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Anxietyscore" />
+        <activity android:name=".Stressscore" />
+        <activity android:name=".Suicidescore" />
+        <activity android:name=".Depressionscore" />
+        <activity android:name=".History" />
+        <activity android:name=".NewMainActivity" />
+        <activity android:name=".Anxietyhistory" />
+        <activity android:name=".Depressionhistory" />
+        <activity android:name=".Stresshistory" />
+        <activity android:name=".Suicidehistory" />
+        <activity android:name=".TherapistDetails" />
+        <activity android:name=".Therapistlist">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Chat" />
+        <activity android:name=".Chat2" />
+        <activity android:name=".Chat3" />
+        <activity android:name=".Chat4" />
+    </application>
+
+</manifest>

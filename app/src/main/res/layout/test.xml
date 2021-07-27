@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_doc"
+                        android:background="@drawable/circle"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="60dp"
+                        android:maxWidth="40dp"
+                        android:scaleType="fitCenter"
+                        >
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/messageround"
+                        android:text="ہیلو! میں ڈاکٹر بوٹ ہوں آپ کیسے ہو؟"
+                       >
+
+                    </TextView>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/messageround"
+                        android:text="میں ٹھیک ہوں"
+                        android:layout_gravity="right"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp">
+
+                    </TextView>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user"
+                        android:background="@drawable/circle"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="60dp"
+                        android:maxWidth="40dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true">
+
+
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+            </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_doc"
+                        android:background="@drawable/circle"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="60dp"
+                        android:maxWidth="40dp"
+                        android:scaleType="fitCenter"
+                        >
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/voice"
+
+                        android:adjustViewBounds="true"
+
+                        android:scaleType="fitCenter"
+                        >
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:text="View Result"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="135dp"
+                    android:layout_marginTop="250dp">
+
+                </Button>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mic"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="80dp"
+                    android:maxWidth="60dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/circle"
+                    android:layout_marginTop="-60dp"
+                    android:layout_marginLeft="340dp"
+                    >
+
+                </androidx.appcompat.widget.AppCompatImageButton>
+
+            </LinearLayout>
+
+
+
+
+</LinearLayout>

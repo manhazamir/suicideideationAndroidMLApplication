@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.about.AboutFragment">
+    <LinearLayout
+        android:weightSum="3"
+        android:background="#8253D6"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <Button
+            android:gravity="left"
+            android:layout_weight="1"
+            android:id="@+id/aboutBack"
+            android:textSize="30sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="#8253D6"
+             />
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="About"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_doc"
+                    android:background="@drawable/circle"
+                    android:scaleType="fitCenter">
+
+                </ImageView>
+
+            </LinearLayout>
+
+    <TextView
+
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Hi! I’m  Doctor Bot and I’m happy to assist you. The purpose of this platform is to help my fellows understand where they lie in terms of their mental health, hence the tagline “We care about you!”. Following are four types of tests you can choose, each evaluated by me:\n \n
+1. Stress Test\n
+2. Anxiety Test\n
+3. Depression Test\n
+4. Suicide Ideation Test
+">
+
+    </TextView>
+            <TextView
+                android:textColorHighlight="@color/purple"
+                android:padding="10dp"
+                android:textColor="#8253D6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="How to use: (in just three steps!)">
+            </TextView>
+
+            <TextView
+
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="1. Select the test you want to take.\n2. Have a conversation with Dr.Bot. Please, read the instructions carefully before you start!\n3. Check your results. Results are also saved to “History” which you can view anytime to evaluate your progress.\n\nYou can also check our list of top therapists and their contact information provided to you! Feel free to contact them, they’re here for you!\n">
+            </TextView>
+
+
+
+
+            <TextView
+
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="
+
+ہائے! میں ڈاکٹر بوٹ ہوں اور مجھے آپ کی مدد کرکے خوشی ہے۔ اس پلیٹ فارم کا مقصد میرے ساتھیوں کو یہ سمجھنے میں مدد کرنا ہے کہ وہ اپنی ذہنی صحت کے لحاظ سے کہاں رہتے ہیں ، لہذا ہم آپ کی پرواہ کرتے ہیں! مندرجہ ذیل چار قسم کے ٹیسٹ ہیں جن کا آپ انتخاب کرسکتے ہیں ، ہر ٹیسٹ کا اندازہ میرے ذریعہ کیا جاتا ہے:\n
+1. Stress ٹیسٹ\n
+2. Anxiety ٹیسٹ\n
+3. Depression ٹیسٹ\n
+4. Suicide Ideation ٹیسٹ\n
+">
+            </TextView>
+
+
+            <TextView
+                android:textColorHighlight="@color/purple"
+
+                android:textColor="#8253D6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="استعمال کرنے کا طریقہ: (صرف تین مراحل میں!)">
+            </TextView>
+
+            <TextView
+
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="1. آپ جو ٹیسٹ لینا چاہتے ہیں اسے منتخب کریں۔\n
+2. ڈاکٹر بوٹ کے ساتھ بات چیت کریں۔ براہ کرم ، شروع کرنے سے پہلے ہدایات کو احتیاط سے پڑھیں!\n
+3. اپنے نتائج چیک کریں۔ نتائج کو تاریخ میں بھی محفوظ کیا جاتا ہے جسے آپ اپنی پیشرفت کا اندازہ کرنے کے لئے کبھی بھی دیکھ سکتے ہیں۔ \n\n
+آپ ہمارے سر فہرست معالجین کی فہرست اور ان سے رابطے کی معلومات بھی فراہم کرسکتے ہیں جو آپ کو فراہم کی گئی ہیں۔ بلا جھجک ان سے رابطہ کریں ، وہ آپ کے لئے یہاں موجود ہیں!
+">
+            </TextView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

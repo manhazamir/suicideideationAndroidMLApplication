@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/therapyDetailLayout"
+    android:visibility="gone"
+    tools:context=".TherapistDetails">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:background="#8253D6"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <Button
+            android:gravity="left"
+            android:layout_weight="1"
+            android:id="@+id/b"
+            android:textSize="30sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="#8253D6"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Therapist Information"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout"-->
+<!--            android:layout_width="421dp"-->
+<!--            android:layout_height="64dp"-->
+<!--            android:background="@color/purple"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" >-->
+<!--            <Button-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:id="@+id/b"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&lt;"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#8253D6"-->
+<!--                app:backgroundTint="@color/white" />-->
+<!--            <TextView-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Therapist Information"-->
+<!--                android:textSize="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textAlignment="center"-->
+<!--                android:fontFamily="sans-serif"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="405dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/therapist_icon"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="21sp"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="275dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/purple_700"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/purple_700"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/profile_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/purple_700"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/email_icon"/>
+            <TextView
+                android:id="@+id/email"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone_icon"/>
+            <TextView
+                android:id="@+id/number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="36dp"-->
+            <!--                android:layout_height="36dp"-->
+            <!--                android:src="@drawable/ic_doc"/>-->
+            <!--            <TextView-->
+            <!--                android:textStyle="bold"-->
+
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:paddingLeft="20dp"-->
+            <!--                android:text="Add to group"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="421dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:background="@color/purple"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" >-->
+<!--        <Button-->
+<!--            android:id="@+id/b"-->
+<!--            android:layout_width="78dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="BACK"-->
+<!--            android:textColor="#8253D6"-->
+<!--            app:backgroundTint="@color/white"-->
+
+<!--            app:iconTint="#8253D6"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.066"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.023" />-->
+<!--        <TextView-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Therapist Information"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textAlignment="center"-->
+<!--            android:fontFamily="sans-serif"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="10dp"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/linearLayout"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/linearLayout"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/linearLayout"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/name"-->
+<!--            android:layout_width="357dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="22dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="80dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/gender"-->
+<!--            android:layout_width="342dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="#757373"-->
+<!--            android:textSize="14dp" />-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="344dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Number"-->
+<!--            android:textColor="#757373"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/number"-->
+<!--            android:layout_width="344dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14dp" />-->
+<!--        <TextView-->
+<!--            android:layout_width="344dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Email"-->
+<!--            android:textColor="#757373"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/email"-->
+<!--            android:layout_width="344dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14dp" />-->
+<!--        <TextView-->
+<!--            android:layout_width="344dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Location"-->
+<!--            android:textColor="#757373"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/location"-->
+<!--            android:layout_width="344dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14dp"-->
+
+<!--            />-->
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>
